@@ -1,0 +1,24 @@
+.container {
+	display: flex;
+	width: 100%;
+}
+
+.rightContainer {
+	--tw-border-opacity: 1;
+    border-left-color: rgb(219 219 219/var(--tw-border-opacity));
+    border-left-width: 1px;
+    border-left-style: ridge;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.leftContainer {
+	width: 50px;
+}
+
+@media screen and (min-width: 640px){
+    .leftContainer {
+        min-width: 250px;
+    }
+}

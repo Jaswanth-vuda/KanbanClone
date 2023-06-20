@@ -1,0 +1,113 @@
+.todo {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  border-radius: 1rem;
+  padding: 1.25rem;
+  }
+  
+  .todoHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+  }
+  
+  .priority {
+    border-radius: 4px;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    padding: 0.25rem 6px;
+    text-transform: capitalize;
+  }
+  
+  .low {
+    --tw-bg-opacity: 0.2;
+    --tw-text-opacity: 1;
+    background-color: rgb(223 168 116/var(--tw-bg-opacity));
+    color: rgb(213 141 73/var(--tw-text-opacity));
+  }
+  
+  .high {
+    --tw-bg-opacity: 0.1;
+    --tw-text-opacity: 1;
+    background-color: rgb(216 114 125/var(--tw-bg-opacity));
+    color: rgb(216 114 125/var(--tw-text-opacity));
+  }
+  
+  .completed {
+    --tw-bg-opacity: 0.2;
+    --tw-text-opacity: 1;
+    background-color: rgb(131 194 157/var(--tw-bg-opacity));
+    color: rgb(104 178 102/var(--tw-text-opacity));
+  }
+  
+  .todoInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1.75rem;
+  }
+  
+  .todoName {
+    --tw-text-opacity: 1;
+    color: rgb(13 6 45/var(--tw-text-opacity));
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+  }
+  
+  .todoDescription {
+    --tw-text-opacity: 1;
+    color: rgb(120 116 134/var(--tw-text-opacity));
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  
+  .images {
+    display: grid;
+    grid-auto-columns: minmax(0,1fr);
+    grid-auto-flow: column;
+  }
+  
+  .images img{
+    height: auto;
+    width: 100%;
+  }
+  .footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1024px){
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+  }
+  .tagsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  @media screen and (min-width: 640px){
+    .tagsContainer {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+  
+  .tag {
+    --tw-text-opacity: 1;
+    align-items: center;
+    color: rgb(120 116 134/var(--tw-text-opacity));
+    display: flex;
+    font-size: .75rem;
+    font-weight: 500;
+    gap: 5px;
+    line-height: 1rem;
+  }
+  

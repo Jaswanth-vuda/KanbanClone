@@ -1,0 +1,14 @@
+.todosContainer {
+  grid-gap: 15px;
+  display: grid;
+  gap: 15px;
+  grid-auto-columns: minmax(0,1fr);
+  grid-auto-flow: row;
+  margin-top: 2.5rem;
+  }
+  
+  @media screen and (min-width: 1024px){
+    .todosContainer{
+      grid-auto-flow: column;
+    }
+  }

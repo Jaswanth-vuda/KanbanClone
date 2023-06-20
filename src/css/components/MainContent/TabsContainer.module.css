@@ -1,0 +1,53 @@
+.tabsContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  width: 100%;
+  }
+  
+  .left {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px){
+    .left{
+      gap: 0.75rem;
+      justify-content: normal;
+    }
+  }
+
+  .right {
+    align-items: center;
+    display: none;
+    gap: 1.25rem;
+  }
+
+  .separator {
+    --tw-border-opacity: 1;
+    border-color: rgb(120 116 134/var(--tw-border-opacity));
+    border-width: 1px;
+    height: 1.75rem;
+    width: 0;
+  }
+  
+  .shareTab {
+    display: none;
+  }
+  
+  @media screen and (min-width: 640px){
+    .shareTab{
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    .shareTab{
+      display: none;
+    }
+    .right{
+      display: flex;
+    }
+  }

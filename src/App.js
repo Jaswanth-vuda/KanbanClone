@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import MainContent from "./components/MainContent";
+import MainHeader from "./components/MainHeader";
+import SideDrawer from "./components/SideDrawer";
+
+import styles from "./css/layout.module.css";
 
 function App() {
+  console.log(process.env.REACT_APP_BASE_URL);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <section className={styles.leftContainer}>
+        <SideDrawer />
+      </section>
+      <section className={styles.rightContainer}>
+        <MainHeader />
+        <MainContent />
+      </section>
     </div>
   );
 }
